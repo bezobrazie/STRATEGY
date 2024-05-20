@@ -15,7 +15,7 @@ class MoveBehavior(ABC):
 
 class Duck(Unit):
 
-    def __init__(self, strategy):
+    def __init__(self, strategy: MoveBehavior):
         super().__init__()
         self._strategy = strategy
 
